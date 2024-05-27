@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatDialog, MatDialogActions, MatDialogContent, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogActions, MatDialogContent, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-certificados',
   standalone: true,
   imports: [CommonModule, MatDialogContent, MatDialogActions,
-    MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, RouterLink
+    MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, RouterLink, MatDialogModule
   ],
   templateUrl: './certificados.component.html',
   styleUrl: './certificados.component.css'
