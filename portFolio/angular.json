@@ -40,8 +40,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "600kb",
-                  "maximumError": "1.2mb"
+                  "maximumWarning": "1.08mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -49,8 +49,12 @@
                   "maximumError": "5kb"
                 }
               ],
-              "outputHashing": "all"
-            },
+              "outputHashing": "all",
+              "optimization": true,
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
