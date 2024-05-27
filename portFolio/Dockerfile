@@ -1,8 +1,7 @@
-FROM node:18.17.1 as build
+FROM node:alpine as build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
-RUN npm install -g @angular/cli
+RUN npm ci npm install -g @angular/cli
 COPY . .
 ENV NODE_OPTIONS=--max_old_space_size=6144
 RUN npm run build --configuration=production
