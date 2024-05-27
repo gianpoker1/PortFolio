@@ -1,0 +1,46 @@
+.footer-container{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(10, 18, 94, 0.8);
+    margin-top: 50px;
+}
+
+.footer-container table{
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.td-custom-title{
+    text-align: left;
+    padding: 10px;
+    padding-right: 100px;
+    color: #49423f;
+    font-size: 23px;
+    font-weight: bold
+  }
+  .td-custom-description{
+    text-align: left;
+    padding: 10px;
+    padding-right: 100px;
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  .desing{
+    display: inline-block;
+    padding: 20px 140px;
+    width: auto;
+    color: #ffffff;
+    border-top: 1px solid rgba(10, 18, 94, 0.8);
+  }
+
+  .td-custom-description a:link,
+.td-custom-description a:visited,
+.td-custom-description a:hover,
+.td-custom-description a:active {
+    color: #ffffff; /* Mantiene el color blanco para todos los estados */
+    text-decoration: none; /* Elimina el subrayado */
+}

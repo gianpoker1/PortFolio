@@ -1,0 +1,187 @@
+.intro-section {
+    color: #f5f3f2;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .intro-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-section p {
+    font-size: 18px;
+  }
+  
+  .intro-section button {
+    
+    
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+   .intro-section button:hover {
+    background-color: #0056b3;
+  } 
+
+   .intro-section {
+    /*background: linear-gradient(45deg, #064385, #051399);*/
+    animation: gradientAnimation 5s infinite alternate;
+  } 
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animated-icon {
+    animation: bounce 1s infinite alternate;
+    margin-right: 35px;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+
+  .icon {
+    width: 50px; /* Ajusta el ancho según tus preferencias */
+    height: 50px; /* Ajusta la altura según tus preferencias */
+  }
+
+  .custom-hr{
+    border: 1px solid;
+    text-align: right;
+    margin: 0;
+    
+  }
+  .custom-h2 {
+    font-size: 35px;
+    text-align: left;
+    font-family: Arial;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-h2:after {
+    display: inline-block;
+    content: "";
+    height: 4px;
+    background: rgb(245, 245, 245);
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    margin-top: -2px;
+    margin-left: 100px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); 
+  gap: 400px; /* Espacio entre las tarjetas */
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.project-card {
+  background: linear-gradient(to bottom, #01270c, #020800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card img {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px; /* Espacio entre la imagen y el borde */
+  max-width: 80%;
+  height: auto;
+}
+
+.project-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.title-proyects{
+  margin-top: 50px;
+  margin-left: 10px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+
+.intro-section .project-card .custom-label {
+  font-weight: bold;
+  color: #f5f3f2;
+  margin-bottom: 20px; /* Espacio entre los botones */
+  margin-right: 8px; /* Espacio entre los botones */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #4d4949; /* Color de fondo */
+  padding: 5px 10px; /* Espacio interno */
+  font-size: 14px; /* Tamaño de fuente */
+  cursor: auto; /* Cambia el cursor al pasar por encima */
+}
+
+.button-contact{
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  background-color: #032c52;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición suave */
+
+}
+
+.button-contact:hover{
+  cursor: pointer;
+  color: #032c52;
+  background-color: #f3efef;
+
+}
+.td-custom-title{
+  text-align: left;
+  padding: 10px;
+  padding-right: 100px;
+  color: #49423f;
+  font-size: 20px;
+  font-weight: bold
+}
+.td-custom-description{
+  text-align: left;
+  padding: 10px;
+  padding-right: 100px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.contact-section{
+  margin-top: 80px;
+}
+
+.proyects-section{
+  margin-top: 80px;
+}
+
+
+

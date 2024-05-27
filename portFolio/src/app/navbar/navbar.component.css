@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+  }
+
+  .logo {
+    transition: transform 0.3s ease;
+  }
+
+  .logo:hover {
+    transform: rotate(360deg);
+  }
+
+  .name {
+    display: flex;
+    align-items: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1%;
+  }
+
+  .name span {
+    transition: transform 0.3s ease;
+  }
+
+  .name span:hover {
+    transform: translateY(-5px);
+    color: rgb(27, 138, 202);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  li {
+    margin-right: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+

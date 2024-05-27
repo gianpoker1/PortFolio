@@ -1,0 +1,47 @@
+<div class="proyect-container">
+    <!-- Certificado 1 -->
+    <div class="proyect-card">
+      <img *ngIf="!dialogRef" src="assets/certificates/full_stack_java_react1.jpg" alt="Certificado 1" class="imagen-ampliada"
+      (click)="ampliarImagen('assets/certificates/full_stack_java_react1.jpg')" /> 
+      <div *ngIf="dialogRef">
+        <mat-dialog-content>
+          <img [src]="dialogRef.componentInstance.rutaImagen" alt="Imagen Ampliada" />
+        </mat-dialog-content>
+      </div>
+    </div>
+
+    
+    <!-- Certificado 2 -->
+    <div class="proyect-card">
+      <img *ngIf="!dialogRef" src="assets/certificates/full_stack_java_react.jpg" alt="Certificado 2" class="imagen-ampliada"
+      (click)="ampliarImagen('assets/certificates/full_stack_java_react.jpg')"/>
+      <div *ngIf="dialogRef">
+        <mat-dialog-content>
+          <img [src]="dialogRef.componentInstance.rutaImagen" alt="Imagen Ampliada" />
+        </mat-dialog-content>
+      </div>
+    </div>
+
+    <!-- Certificado 3 -->
+    <div class="proyect-card">
+        <img *ngIf="!dialogRef" src="assets/certificates/spring_boot_2.jpg" alt="Certificado 3" class="imagen-ampliada"
+        (click)="ampliarImagen('assets/certificates/spring_boot_2.jpg')" />
+        <div *ngIf="dialogRef">
+          <mat-dialog-content>
+            <img [src]="dialogRef.componentInstance.rutaImagen" alt="Imagen Ampliada" />
+          </mat-dialog-content>
+        </div>
+    </div>
+    <!-- Certificado 4 -->
+    <div class="proyect-card">
+        <img *ngIf="!dialogRef" src="assets/certificates/spring_boot_react.jpg" alt="Certificado 4" class="imagen-ampliada"
+        (click)="ampliarImagen('assets/certificates/spring_boot_react.jpg')" />
+        <div *ngIf="dialogRef">
+          <mat-dialog-content>
+            <img [src]="dialogRef.componentInstance.rutaImagen" alt="Imagen Ampliada" />
+          </mat-dialog-content>
+        </div>
+    </div>
+</div>
+
+  

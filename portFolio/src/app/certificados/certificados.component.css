@@ -1,0 +1,57 @@
+
+
+ .proyect-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); 
+    gap: 200px; /* Espacio entre las tarjetas */
+    align-items: center;
+    width: 100%;
+  }
+
+ .proyect-card {
+    background: linear-gradient(to bottom, #01270c, #020800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #ccc;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+  } 
+
+  .proyect-card:hover{
+    transform: translate(0px , -10px);
+  }
+
+ .proyect-card img {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px; /* Espacio entre la imagen y el borde */
+    max-width: 90%;
+    height: auto;
+  } 
+
+ .proyect-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }  
+
+  .td-custom-title{
+    text-align: left;
+    padding: 10px;
+    padding-right: 100px;
+    color: #49423f;
+    font-size: 20px;
+    font-weight: bold
+  }
+  .td-custom-description{
+    text-align: left;
+    padding: 10px;
+    padding-right: 100px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+
+
