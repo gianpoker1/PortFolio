@@ -3,6 +3,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 RUN npm install -g @angular/cli
+ENV NODE_OPTIONS=--max_old_space_size=2048
 COPY . .
 RUN npm run build --configuration=production
 
