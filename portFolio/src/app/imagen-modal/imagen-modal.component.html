@@ -6,8 +6,11 @@
   <mat-dialog-content >
 
     <img [src]="data.rutaImagen" alt="Imagen Ampliada" />
-    <button mat-button [mat-dialog-close]="">Cerrar</button>
+    
 
   </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button [mat-dialog-close]="true">Cerrar</button>
+  </mat-dialog-actions>
   </div>
 </div>

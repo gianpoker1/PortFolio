@@ -8,7 +8,7 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 export const routes: Routes = [
     {path: '', component: InicioComponent},
     {path: 'certificados', component: CertificadosComponent},
-    {path: 'imagen-model', component: ImagenModalComponent},
+    {path: 'imagen-modal', component: ImagenModalComponent},
     {path: 'proyectos', component: ProyectosComponent}
 ];
 

@@ -1,12 +1,12 @@
-FROM node:alpine as build
+FROM node:20.11 as build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci npm install -g @angular/cli
+RUN npm ci
+RUN npm install -g @angular/cli
 COPY . .
-ENV NODE_OPTIONS=--max_old_space_size=6144
 RUN npm run build --configuration=production
 
 FROM nginx:stable
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/dist/port-folio usr/share/nginx/html
+COPY --from=build /app/dist/port-folio /usr/share/nginx/html
 EXPOSE 80

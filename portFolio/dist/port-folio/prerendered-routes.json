@@ -1,8 +1,0 @@
-{
-  "routes": [
-    "/",
-    "/certificados",
-    "/imagen-model",
-    "/proyectos"
-  ]
-}
